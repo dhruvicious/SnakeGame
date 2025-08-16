@@ -41,6 +41,7 @@ The project features clean architecture, interactive UI, multiple levels, and ro
     ```
 ---
 ## 📂 Project Structure
+```
 Snake/
 ├── Assets/           # Game textures
 ├── external/         # External libraries (Raylib)
@@ -51,6 +52,7 @@ Snake/
 ├── tests/            # Unit tests (Catch2)
 ├── CMakeLists.txt    # Build configuration
 └── README.md         # Project documentation
+```
 
 ## 🤓 Learnings & Highlights
 This is my third game project, where I applied:
