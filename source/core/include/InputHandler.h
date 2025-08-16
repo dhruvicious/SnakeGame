@@ -12,31 +12,31 @@
  */
 class InputHandler
 {
-  public:
-    /**
-     * @brief Constructs an InputHandler and initializes command mappings.
-     */
-    InputHandler() noexcept;
+public:
+  /**
+   * @brief Constructs an InputHandler and initializes command mappings.
+   */
+  InputHandler() noexcept;
 
-    /**
-     * @brief Processes current input and returns the corresponding command.
-     *
-     * Checks for user input (e.g., key presses) and returns a pointer to the
-     * appropriate Command object. If no relevant input is detected, returns a NullCommand.
-     *
-     * @return Command* Pointer to the command corresponding to the current input.
-     */
-    Command *HandleInput();
+  /**
+   * @brief Processes current input and returns the corresponding command.
+   *
+   * Checks for user input (e.g., key presses) and returns a pointer to the
+   * appropriate Command object. If no relevant input is detected, returns a NullCommand.
+   *
+   * @return Command* Pointer to the command corresponding to the current input.
+   */
+  Command *HandleInput();
 
-    /**
-     * @brief Destructor for InputHandler.
-     */
-    virtual ~InputHandler() = default;
+  /**
+   * @brief Destructor for InputHandler.
+   */
+  virtual ~InputHandler() = default;
 
-  private:
-    std::unique_ptr<Command> ButtonW_;     ///< Command for the 'W' key (move up).
-    std::unique_ptr<Command> ButtonD_;     ///< Command for the 'D' key (move right).
-    std::unique_ptr<Command> ButtonA_;     ///< Command for the 'A' key (move left).
-    std::unique_ptr<Command> ButtonS_;     ///< Command for the 'S' key (move down).
-    std::unique_ptr<Command> NullCommand_; ///< Command for no input or unhandled input.
+private:
+  std::unique_ptr<Command> ButtonW_;     ///< Command for the 'W' key (move up).
+  std::unique_ptr<Command> ButtonD_;     ///< Command for the 'D' key (move right).
+  std::unique_ptr<Command> ButtonA_;     ///< Command for the 'A' key (move left).
+  std::unique_ptr<Command> ButtonS_;     ///< Command for the 'S' key (move down).
+  std::unique_ptr<Command> NullCommand_; ///< Command for no input or unhandled input.
 };

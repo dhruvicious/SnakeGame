@@ -10,19 +10,19 @@
  */
 class Command
 {
-  public:
-    /**
-     * @brief Executes the command on the given Snake actor.
-     * @param SnakeActor Reference to the Snake object to operate on.
-     */
-    virtual void execute(Snake &SnakeActor) = 0;
+public:
+  /**
+   * @brief Executes the command on the given Snake actor.
+   * @param SnakeActor Reference to the Snake object to operate on.
+   */
+  virtual void execute(Snake &SnakeActor) = 0;
 
-    /**
-     * @brief Virtual destructor for safe polymorphic deletion.
-     */
-    virtual ~Command();
+  /**
+   * @brief Virtual destructor for safe polymorphic deletion.
+   */
+  virtual ~Command();
 
-  protected:
+protected:
 };
 
 /**
@@ -30,12 +30,12 @@ class Command
  */
 class MoveUPCommand : public Command
 {
-  public:
-    /**
-     * @brief Executes the move up action on the Snake.
-     * @param SnakeActor Reference to the Snake object.
-     */
-    void execute(Snake &SnakeActor) override;
+public:
+  /**
+   * @brief Executes the move up action on the Snake.
+   * @param SnakeActor Reference to the Snake object.
+   */
+  void execute(Snake &SnakeActor) override;
 };
 
 /**
@@ -43,12 +43,12 @@ class MoveUPCommand : public Command
  */
 class MoveDownCommand : public Command
 {
-  public:
-    /**
-     * @brief Executes the move down action on the Snake.
-     * @param SnakeActor Reference to the Snake object.
-     */
-    void execute(Snake &SnakeActor) override;
+public:
+  /**
+   * @brief Executes the move down action on the Snake.
+   * @param SnakeActor Reference to the Snake object.
+   */
+  void execute(Snake &SnakeActor) override;
 };
 
 /**
@@ -56,12 +56,12 @@ class MoveDownCommand : public Command
  */
 class MoveRightCommand : public Command
 {
-  public:
-    /**
-     * @brief Executes the move right action on the Snake.
-     * @param SnakeActor Reference to the Snake object.
-     */
-    void execute(Snake &SnakeActor) override;
+public:
+  /**
+   * @brief Executes the move right action on the Snake.
+   * @param SnakeActor Reference to the Snake object.
+   */
+  void execute(Snake &SnakeActor) override;
 };
 
 /**
@@ -69,12 +69,12 @@ class MoveRightCommand : public Command
  */
 class MoveLeftCommand : public Command
 {
-  public:
-    /**
-     * @brief Executes the move left action on the Snake.
-     * @param SnakeActor Reference to the Snake object.
-     */
-    void execute(Snake &SnakeActor) override;
+public:
+  /**
+   * @brief Executes the move left action on the Snake.
+   * @param SnakeActor Reference to the Snake object.
+   */
+  void execute(Snake &SnakeActor) override;
 };
 
 /**
@@ -84,10 +84,10 @@ class MoveLeftCommand : public Command
  */
 class NullCommand : public Command
 {
-  public:
-    /**
-     * @brief Executes the null action (does nothing).
-     * @param SnakeActor Reference to the Snake object.
-     */
-    void execute(Snake &SnakeActor) noexcept override;
+public:
+  /**
+   * @brief Executes the null action (does nothing).
+   * @param SnakeActor Reference to the Snake object.
+   */
+  void execute(Snake &SnakeActor) noexcept override;
 };

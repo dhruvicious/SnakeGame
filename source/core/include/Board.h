@@ -58,7 +58,7 @@ struct Vector2Hash
  */
 class Board
 {
-  public:
+public:
     /**
      * @brief Constructs a Board from the given level data.
      * @param LevelData 2D vector representing the initial level layout.
@@ -108,15 +108,15 @@ class Board
      */
     virtual ~Board();
 
-  private:
+private:
     /**
      * @brief Transforms the initial level data into the board map.
      */
     void TransformLevelData();
 
-    std::vector<std::vector<bool>> LevelData_; /**< 2D vector storing the initial level layout. */
+    std::vector<std::vector<bool>> LevelData_;                                   /**< 2D vector storing the initial level layout. */
     std::unordered_map<Vector2, ECellType, Vector2Hash, Vector2Equal> BoardMap_; /**< Map storing the cell states. */
-    Vector2 StartingPosition_; /**< The starting position on the board. */
-    size_t LevelXSize_;        /**< The width (number of columns) of the level. */
-    size_t LevelYSize_;        /**< The height (number of rows) of the level. */
+    Vector2 StartingPosition_;                                                   /**< The starting position on the board. */
+    size_t LevelXSize_;                                                          /**< The width (number of columns) of the level. */
+    size_t LevelYSize_;                                                          /**< The height (number of rows) of the level. */
 };

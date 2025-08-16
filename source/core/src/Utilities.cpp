@@ -1,7 +1,6 @@
 #include "Utilities.h"
 
-RandomNumberGenerator::RandomNumberGenerator(int Min, int Max) : 
-    gen(std::random_device{}()), dist(Min, Max)
+RandomNumberGenerator::RandomNumberGenerator(int Min, int Max) : gen(std::random_device{}()), dist(Min, Max)
 {
 }
 

@@ -1,0 +1,50 @@
+# Build directories
+/build/
+cmake-build-*/
+CMakeFiles/
+CMakeCache.txt
+Makefile
+*.cmake
+install_manifest.txt
+compile_commands.json
+CTestTestfile.cmake
+
+# Binaries
+*.exe
+*.out
+*.app
+*.o
+*.obj
+*.a
+*.so
+*.dylib
+*.dll
+
+# IDE / Editor settings
+.vscode/
+.idea/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Generated test files
+/tests/*.out
+/tests/*.log
+/tests/*.tmp
+
+# External dependencies (if not vendored intentionally)
+external/
+
+# Clang format/tidy caches
+.clang-tidy
+.clang-format
+
+# Other misc
+*.swp
+*.swo
+
+builds/
