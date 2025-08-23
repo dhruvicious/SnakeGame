@@ -17,7 +17,6 @@ The project features clean architecture, interactive UI, multiple levels, and ro
 -   📁 **Clean folder structure** with **CMake build system**
 -   📄 **Doxygen documentation**
 -   📑 **Clang formatting** for consistent code style
--   📊 **Agile workflow with Kanban** (Jira)
 
 ---
 
@@ -66,5 +65,4 @@ Snake/
 -   🎮 Game patterns (Game Loop, Command)
 -   🏗 S.O.L.I.D. principles and decoupled architecture
 -   🧠 Smart pointers for memory safety
--   📊 Agile project tracking with Kanban (Jira)
 -   🌱 GitHub branch-based workflow
