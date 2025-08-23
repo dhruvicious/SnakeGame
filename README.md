@@ -21,6 +21,10 @@ The project features clean architecture, interactive UI, multiple levels, and ro
 
 ---
 
+## Screen Capture
+
+![Demo](GITPic/1.gif)
+
 ## 🛠 How to Build & Run
 
 1. Clone the repository
