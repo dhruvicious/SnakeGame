@@ -8,8 +8,8 @@ The project features clean architecture, interactive UI, multiple levels, and ro
 ## ✨ Features
 
 -   🎮 **Controls:** W, A, S, D
--   🍎 **Movable food** — makes gameplay more challenging
--   🔰 **3 levels with unique layouts** (custom level editor incoming 🚧)
+-   🍎 **Moving food** — makes gameplay more challenging
+-   🔰 **3 levels with unique layouts**
 -   🟢 **Rendering & UI with Raylib**
 -   🧪 **Unit testing with Catch2**
 -   🧱 **OOP Game Patterns**: Command, Game Loop
@@ -39,8 +39,11 @@ The project features clean architecture, interactive UI, multiple levels, and ro
     cmake --build ./build
     ctest --test-dir ./build/tests --verbose
     ```
+
 ---
+
 ## 📂 Project Structure
+
 ```
 Snake/
 ├── Assets/           # Game textures
@@ -55,9 +58,9 @@ Snake/
 ```
 
 ## 🤓 Learnings & Highlights
-This is my third game project, where I applied:
-	•	🎮 Game patterns (Game Loop, Command)
-	•	🏗 S.O.L.I.D. principles and decoupled architecture
-	•	🧠 Smart pointers for memory safety
-	•	📊 Agile project tracking with Kanban (Jira)
-	•	🌱 GitHub branch-based workflow
+
+• 🎮 Game patterns (Game Loop, Command)
+• 🏗 S.O.L.I.D. principles and decoupled architecture
+• 🧠 Smart pointers for memory safety
+• 📊 Agile project tracking with Kanban (Jira)
+• 🌱 GitHub branch-based workflow
